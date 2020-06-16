@@ -2,8 +2,8 @@
 2. Login with the admin user account
 3. In the master database, execute the following query (Click on the master database, the highest level in the folder structure, and create a new query window)
    1. `USE master;`
-   2. `CREATE LOGIN NEW_LOGIN_USERNAME WITH PASSWORD = 'NEW_LOGIN_PASSWORD'; GO` (This creates a new login credential for the master database)
-   3. `CREATE USER NEW_LOGIN_USERNAME FOR LOGIN NEW_LOGIN_USERNAME; GO` (This creates a new user for the new login in the master database)
+   2. `CREATE LOGIN NEW_LOGIN_USERNAME WITH PASSWORD = 'NEW_LOGIN_PASSWORD';` (This creates a new login credential for the master database)
+   3. `CREATE USER NEW_LOGIN_USERNAME FOR LOGIN NEW_LOGIN_USERNAME;` (This creates a new user for the new login in the master database)
 4. In individual database, execute the following query (You will have to click on the individual database, opening it up to the subfolder level, and then create a new query window)
    1. `USE INDIVIDUAL_DATABASE_NAME;`
    2. `CREATE ROLE db_execproc;` (This creates a new role that will be able to execute stored procedure)
